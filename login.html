@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form action="login.php" method="POST" >
+            <div class="input-box">
+                <input  type="text" id="username" class="username" name="username" placeholder="username" required>
+            </div>
+            <div class="input-box">
+                <input type="password" id="password" class="password" name="password" placeholder="password" required>
+            </div>
+            <div class="login">
+                <button type="submit" id="submit" class="submit" name="submit">
+                    Login
+                </button>
+            </div>
+        </form>
+        <div class="additional-links">
+            <a href="forgot-password.html" class="forgot-password">Forgot Password?</a>
+            <span>|</span>
+            <a href="signup.html" class="signup">Sign Up</a>
+        </div>
+    </div>
+</body>
+</html>

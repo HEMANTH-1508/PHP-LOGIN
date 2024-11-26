@@ -1,0 +1,100 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: linear-gradient(#141e30, #2a6c56);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.login-container {
+    width: 400px;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    font-size: 28px;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+}
+
+.input-box label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -20px;
+    left: 0;
+    font-size: 12px;
+    color: #03f484;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #03f484;
+    background: none;
+    border: 1px solid #03f484;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 4px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover {
+    background: #03f484;
+    color: #141e30;
+}
+
+.additional-links {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #03f484;
+}
+
+.additional-links a {
+    color: #03f484;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.additional-links a:hover {
+    color: #fff;
+}
